@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Dragcave.DragCaveApp">
+  <grid id="27dc6" binding="panelMain" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <alignmentX value="0.5"/>
+      <alignmentY value="0.5"/>
+      <minimumSize width="500" height="334"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="48f34" class="javax.swing.JButton" binding="startButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <text value="Start"/>
+        </properties>
+      </component>
+      <component id="7b14e" class="javax.swing.JButton" binding="stopButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="Stop"/>
+        </properties>
+      </component>
+      <component id="8a574" class="javax.swing.JButton" binding="clearButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Clear"/>
+        </properties>
+      </component>
+      <grid id="aa761" binding="middlePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="325" height="322"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="3691a" binding="textPanel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <autoscrolls value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="929c7" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+                <constraints/>
+                <properties>
+                  <autoscrolls value="true"/>
+                  <editable value="false"/>
+                  <lineWrap value="false"/>
+                  <minimumSize width="0" height="100"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <tabbedpane id="491fa" binding="tabbedPane1" default-binding="true">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="322"/>
+          </grid>
+        </constraints>
+        <properties>
+          <doubleBuffered value="false"/>
+          <enabled value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="77cb3" binding="optionsPanel" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Options"/>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="5cda1" class="javax.swing.JCheckBox" binding="blueDinoCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Blue Dino"/>
+                </properties>
+              </component>
+              <component id="38f08" class="javax.swing.JCheckBox" binding="iceDragonCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Ice Dragon"/>
+                </properties>
+              </component>
+              <component id="c4e5" class="javax.swing.JCheckBox" binding="redDinoCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Red Dino"/>
+                </properties>
+              </component>
+              <component id="b107f" class="javax.swing.JCheckBox" binding="yellowDinoCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Yellow Dino"/>
+                </properties>
+              </component>
+              <component id="b70a0" class="javax.swing.JCheckBox" binding="greenDinoCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Green Dino"/>
+                </properties>
+              </component>
+              <component id="ee22c" class="javax.swing.JCheckBox" binding="goldDragonCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="GoldDragon"/>
+                </properties>
+              </component>
+              <component id="9eb1e" class="javax.swing.JCheckBox" binding="silverDragonCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Silver Dragon "/>
+                </properties>
+              </component>
+              <component id="f8893" class="javax.swing.JCheckBox" binding="goldenWyvrenCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Golden Wyvren"/>
+                </properties>
+              </component>
+              <component id="7d3e5" class="javax.swing.JCheckBox" binding="copperDragonCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Copper Dragon"/>
+                </properties>
+              </component>
+              <component id="c3277" class="javax.swing.JCheckBox" binding="magmaDragonCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Magma Dragon"/>
+                </properties>
+              </component>
+              <component id="396af" class="javax.swing.JCheckBox" binding="thunderDragonCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Thunder Dragon"/>
+                </properties>
+              </component>
+              <component id="3296e" class="javax.swing.JCheckBox" binding="paperDragonCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Paper Dragon"/>
+                </properties>
+              </component>
+              <component id="5e50d" class="javax.swing.JCheckBox" binding="xenowyrmCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Xenowyrm"/>
+                </properties>
+              </component>
+              <component id="2c827" class="javax.swing.JCheckBox" binding="cheeseDragonCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Cheese Dragon"/>
+                </properties>
+              </component>
+              <component id="23ca3" class="javax.swing.JCheckBox" binding="blusangLindwurmCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Blusang Lindwurm"/>
+                </properties>
+              </component>
+              <component id="b2b12" class="javax.swing.JCheckBox" binding="chickenCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <selected value="true"/>
+                  <text value="Chicken"/>
+                </properties>
+              </component>
+              <component id="bd5e4" class="javax.swing.JCheckBox" binding="selectAllCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <selected value="true"/>
+                  <text value="Select All"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
